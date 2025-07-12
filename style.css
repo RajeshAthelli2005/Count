@@ -1,0 +1,73 @@
+#countlabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+
+}
+
+#btcontainer, #countlabel{
+    margin: 20px;
+}
+#btcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btcontainer{
+    text-align: center;
+}
+#btcontainer .buttons{
+    margin: 10px;
+    display: inline-block;
+}
+
+#btcontainer .buttons:focus{
+    outline: 2px solid black;
+    outline-offset: 5px;
+}
+
+
+.buttons{
+    padding: 10px 20px;
+    font-size: 2em;
+    color: black;
+    background-color: yellow;
+    cursor: pointer;
+    transition: backround-color 0.25s;
+
+}
+
+
+.buttons:hover{
+    background-color: aqua;
+}
+
+@media screen and (max-width: 600px) {
+    #countlabel{
+        font-size: 5em;
+    }
+    .buttons{
+        font-size: 1.5em;
+        padding: 5px 10px;
+    }
+    #btcontainer{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    #countlabel{
+        font-size: 3em;
+    }
+    .buttons{
+        font-size: 1.2em;
+        padding: 3px 6px;
+    }
+    #btcontainer{
+        flex-direction: column;
+    }
+    
+}
